@@ -137,7 +137,7 @@ Here are five German traffic signs that I found on the web:
 ![alt text][image14]
 
 
-These images are generally difficult to classify because these are high resolution images and when these are shrunk to the desired size of 32x32, some information is usually lost. This causes difficulty in identifying distinct features from the image
+These images are generally difficult to classify because these are high resolution images and when these are shrunk to the desired size of 32x32, some information is usually lost. This causes difficulty in identifying distinct features from the image. Additionally, these parituclar labels were chosen as these labels had smaller number of training data compared to the other labels.
 
 #### 2. Results on the new Test Images
 
@@ -178,6 +178,6 @@ The Softmax probabilities for the test images are:
 | [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [23,  0,  1] |
 | [1.0000000e+00, 2.7554958e-19, 1.5261866e-21] | [31, 21, 25] |
 
-
+Since the last image was misclassified as Wild Animals Crossing, it can be interpreted that the model has not learnt to predict Wild Animals Crossing as well as Road Work labels accurately. Meaning there is some ambiguity in classification as per the model. And this is more enhanced in images which undergo data loss due to shrinkage. So, we might neeed to feed additional data for these class for the model to better learn its features. As we can see in they hysteresis plot that these are also the labels with very less data points compared to the other labels. Similar statement can be said about predicting a Dangerous Right Curve as well. 
 
 
