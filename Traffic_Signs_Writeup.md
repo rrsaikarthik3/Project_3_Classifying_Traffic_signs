@@ -143,18 +143,18 @@ These images are generally difficult to classify because these are high resoluti
 
 Here are the results of the prediction:
 
-| Image			        |     Prediction	        					| 
+| Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:| 
-| Children Crossing     		|  	Children Crossing							| 
-| Dangerous Right     			| 		Speed Limit 120 KM/H						|
-| Dangerous Left					|  	Dangerous Left				|
-| General Caution	      		| 	General Caution		 				|
-| Go Straight or Right	|   Go Straight or Right   							|
-| Keep Left    		|  	Keep Left 								| 
-| Road Work    			| 		Road Work								|
-| Road Work    			| 		Road Work								|
-| Slippery Road				|			Slippery Road								|
-| Slippery Road				|			Wild Animals Crossing								|
+| Children Crossing   28  		|  	Children Crossing							|
+| Dangerous Right   20  			| 		Speed Limit 120 KM/H						|
+| Dangerous Left			19		|  	Dangerous Left				|
+| General Caution	  18    		| 	General Caution		 				|
+| Go Straight or Right	 36|   Go Straight or Right   							|
+| Keep Left    	39	|  	Keep Left 								| 
+| Road Work    	25		| 		Road Work								|
+| Road Work    	25		| 		Road Work								|
+| Slippery Road		23		|			Slippery Road								|
+| Slippery Road			23	|			Wild Animals Crossing							|
 
 
 
