@@ -164,7 +164,9 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 #### 3. Softmax probabilities of the Test Images
 
 The Softmax probabilities for the test images are:
+
 | Probabilities    | Classes |
+|:---------------------:|:---------------------------------------------:| 
 | [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [28,  0,  1] |
 | [1.0000000e+00, 1.0455428e-12, 2.4460186e-13] | [ 8,  1,  4] |
 | [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [20,  0,  1] |
