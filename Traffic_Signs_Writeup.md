@@ -60,7 +60,7 @@ Here is an exploratory visualization of the data set. It is a hysteresis plot sh
 
 #### 1. Data Augmentation and Pre-Processing
 1. Beofre pre-processing the data, the trianing data size was increased by rotating the existing images by 4 different angles about the center of the image. Initially without the additional data, I could achive the validation accuracy of over 93%. But, this had very poor results on the completely new dataset I downloaded from the Internet. I tried using different approaches to make the model better by grayscaling it and adding it as a layer in addition to the existing RGB layer and this did not have much impact. I even tried removing the RGB layers and just trained with the grayscale images , even though this slightly improved the performance on the validation set, it still did not improve the performance on the completely new dataset. This motivated me to increase the training samples. 
-A sample of the original pre-processes image is 
+A sample of the original pre-processed image is 
 ![alt text][image2]
 2 Thus, the training data was made to 5x the initial size. 
 The visualization of the dataset post augmentation is shown here:
@@ -116,7 +116,7 @@ My final model results were:
 * validation set accuracy of  
 * test set accuracy of 
 
-The LeNET architecture was retained throughout because i believed that this could be enoug to solve this image classification problem with a decent accuracy based on the lectures. The main thing adjusted were the height of each layer in order to learn many features as possible as this is crucial in identifiying traffic signs. Also a droput layer was introduced in order to avoid over-fitting the model.
+The LeNet architecture was retained throughout because i believed that this could be enoug to solve this image classification problem with a decent accuracy based on the lectures. The main thing adjusted were the height of each layer in order to learn many features as possible as this is crucial in identifiying traffic signs. Also a droput layer was introduced in order to avoid over-fitting the model.
 
 ### Test a Model on New Images
 
