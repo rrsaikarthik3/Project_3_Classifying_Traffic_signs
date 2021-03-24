@@ -76,7 +76,6 @@ A sample of the rotated image is shown here:
 3. Then, the images were normalized before training
 Normalized Image sample is shown here:
 
-![alt text][image5]
 
 
 
