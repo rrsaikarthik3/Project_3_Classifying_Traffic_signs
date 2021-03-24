@@ -104,7 +104,8 @@ To train the model, I used the Adam Optimizer in order to decrease the Cross Ent
 Learning Rate = 0.0015
 Batch Size = 128
 Epochs = 20
-These hyperparameters werew chosen based on an iterative approach in order to find the best validation accuracy.
+
+These hyperparameters were chosen based on an iterative approach in order to find the best validation accuracy.
 
 #### 4. Arriving at the final model and their results
 
