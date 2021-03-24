@@ -54,6 +54,7 @@ The link to the project is [project code](https://github.com/rrsaikarthik3/Proje
 #### 2. Visaulization of Dataset trend
 
 Here is an exploratory visualization of the data set. It is a hysteresis plot showing number of training data points available for each class
+
 ![alt text][image1]
 
 ### Design and Test a Model Architecture
@@ -62,13 +63,18 @@ Here is an exploratory visualization of the data set. It is a hysteresis plot sh
 1. Beofre pre-processing the data, the trianing data size was increased by rotating the existing images by 4 different angles about the center of the image. Initially without the additional data, I could achive the validation accuracy of over 93%. But, this had very poor results on the completely new dataset I downloaded from the Internet. I tried using different approaches to make the model better by grayscaling it and adding it as a layer in addition to the existing RGB layer and this did not have much impact. I even tried removing the RGB layers and just trained with the grayscale images , even though this slightly improved the performance on the validation set, it still did not improve the performance on the completely new dataset. This motivated me to increase the training samples. 
 A sample of the original pre-processed image is 
 ![alt text][image2]
-2 Thus, the training data was made to 5x the initial size. 
+
+2. Thus, the training data was made to 5x the initial size. 
 The visualization of the dataset post augmentation is shown here:
+
 ![alt text][image3]
 A sample of the rotated image is shown here: 
+
 ![alt text][image4]
+
 3. Then, the images were normalized before training
 Normalized Image sample is shown here:
+
 ![alt text][image5]
 
 
@@ -123,10 +129,12 @@ The LeNet architecture was retained throughout because i believed that this coul
 #### 1. 5 different Traffic signs were chosen from the web and were trained on the model
 
 Here are five German traffic signs that I found on the web:
+
 ![alt text][image5] ![alt text][image6] ![alt text][image7]
 ![alt text][image8] ![alt text][image9] ![alt text][image10]
 ![alt text][image11] ![alt text][image12] ![alt text][image13]
 ![alt text][image14]
+
 
 These images are generally difficult to classify because these are high resolution images and when these are shrunk to the desired size of 32x32, some information is usually lost. This causes difficulty in identifying distinct features from the image
 
