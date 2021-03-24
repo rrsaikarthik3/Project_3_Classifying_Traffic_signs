@@ -139,14 +139,23 @@ Here are five German traffic signs that I found on the web:
 
 
 ![alt text][image5] 
+
 ![alt text][image6] 
+
 ![alt text][image7]
+
 ![alt text][image8] 
+
 ![alt text][image9] 
+
 ![alt text][image10]
+
 ![alt text][image11] 
+
 ![alt text][image12] 
+
 ![alt text][image13]
+
 ![alt text][image14]
 
 
