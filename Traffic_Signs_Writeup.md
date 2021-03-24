@@ -119,9 +119,9 @@ These hyperparameters were chosen based on an iterative approach in order to fin
 In order to arrive at the final model, I first build the architecture intuitively in order to learn the most number of features as possible in the training. And based on this initial set-up, I tried to tune the hyperparameters mentioned in Step:3.
 Once these were fixed, i tried to play around with the architecture parameters in order to fix one partular model. 
 My final model results were:
-* training set accuracy of 
-* validation set accuracy of  
-* test set accuracy of 
+* training set accuracy of 94.2%
+* validation set accuracy of  95.5%
+* test set accuracy of 99.2%
 
 The LeNet architecture was retained throughout because i believed that this could be enoug to solve this image classification problem with a decent accuracy based on the lectures. The main thing adjusted were the height of each layer in order to learn many features as possible as this is crucial in identifiying traffic signs. Also a droput layer was introduced in order to avoid over-fitting the model.
 
@@ -145,14 +145,16 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Children Crossing     		|  									| 
-| Dangerous Right     			| 										|
-| Dangerous Left					| 											|
-| General Caution	      		| 				 				|
-| Go Straight or Right	|      							|
-| Keep Left    		|  									| 
-| Road Work    			| 										|
-| Slippery Road				|											|
+| Children Crossing     		|  	Children Crossing							| 
+| Dangerous Right     			| 		Speed Limit 120 KM/H						|
+| Dangerous Left					|  	Dangerous Left				|
+| General Caution	      		| 	General Caution		 				|
+| Go Straight or Right	|   Go Straight or Right   							|
+| Keep Left    		|  	Keep Left 								| 
+| Road Work    			| 		Road Work								|
+| Road Work    			| 		Road Work								|
+| Slippery Road				|			Slippery Road								|
+| Slippery Road				|			Wild Animals Crossing								|
 
 
 
@@ -161,17 +163,19 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 #### 3. Softmax probabilities of the Test Images
 
-The Top 3 probabilites of the Test Images are as follows :
+The Softmax probabilities for the test images are:
+| Probabilities    | Classes |
+| [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [28,  0,  1] |
+| [1.0000000e+00, 1.0455428e-12, 2.4460186e-13] | [ 8,  1,  4] |
+| [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [20,  0,  1] |
+| [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [18,  0,  1] | 
+| [9.9805415e-01, 1.9459319e-03, 0.0000000e+00] | [36, 38,  0] |
+| [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [39,  0,  1] |
+| [1.0000000e+00, 1.3245671e-38, 0.0000000e+00] | [25, 22,  0] |
+| [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [25,  0,  1] |
+| [1.0000000e+00, 0.0000000e+00, 0.0000000e+00] | [23,  0,  1] |
+| [1.0000000e+00, 2.7554958e-19, 1.5261866e-21] | [31, 21, 25] |
 
-| Probability         	|     Prediction	        					| 
-|:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
 
-
-For the second image ... 
 
 
